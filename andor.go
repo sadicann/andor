@@ -109,7 +109,7 @@ func main() {
 		fmt.Println("If you want to attack with Blind Based SQL Injection technique, type 'pwn'")
 		fmt.Scanln(&input)
 		if strings.EqualFold(input, "pwn") == true {
-			pwn("len")
+			pwn("err")
 		}
 	case "between":
 		color.Green("Len Based Detection Method: WORKING")
