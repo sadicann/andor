@@ -353,7 +353,7 @@ func test(query string, method string) int {
 
 func getPageLen(pageURL string) int {
 	html := getPageHTML(pageURL)
-	if strings.Contains("html", "<head>") {
+	if strings.Contains(html, "<head>") {
 		afterHeadHTML := strings.SplitAfter(string(html), "<head>")
 		plain := html2text.HTML2Text(afterHeadHTML[1])
 		return len(plain)
